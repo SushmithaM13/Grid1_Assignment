@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .container{
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(2,200px);
+            gap: 20px;
+        }
+        .container > div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .child1{
+            background-color: aqua;
+        }
+        .child2{
+            background-color: rebeccapurple;
+        }
+        .child3{
+            background-color: red;
+        }
+        .child4{
+            background-color: blueviolet;
+        }
+        .child5{
+            background-color: orangered;
+        }
+        .child6{
+            background-color: orange;
+        }
+        .child7{
+            background-color: palegreen;
+        }
+        .child8{
+            background-color: purple;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child1">box1</div>
+        <div class="child2">box2</div>
+        <div class="child3">box3</div>
+        <div class="child4">box4</div>
+        <div class="child5">box5</div>
+        <div class="child6">box6</div>
+        <div class="child7">box7</div>
+        <div class="child8">box8</div>
+    </div>
+</body>
+</html>
